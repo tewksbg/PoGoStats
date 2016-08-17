@@ -1,0 +1,225 @@
+
+E:\PoGo\pgoapi-master\pgoapi-master>python ./pokecli.py -a  google -u tewksbg -p <REMOVED> -l 39,-84 -d
+2016-08-16 22:11:55,515 [    pgoapi] [ INFO] pgoapi v1.1.6 - Copyright (c) 2016 tjado <https://github.com/tejado>
+2016-08-16 22:11:56,371 [ utilities] [ INFO] Location for '39,-84' found: 1839 Kress Rd, Mt Orab, OH 45154, USA
+2016-08-16 22:11:56,388 [ utilities] [ INFO] Coordinates (lat/long/alt) for location: 39.000584 -83.998636 0.0
+2016-08-16 22:11:56,394 [    pgoapi] [DEBUG] Set Position - Lat: 39.000584 Long: -83.998636 Alt: 0.0
+2016-08-16 22:11:56,398 [    pgoapi] [DEBUG] Auth provider: google
+2016-08-16 22:11:56,401 [auth_google] [ INFO] Google login for: tewksbg
+2016-08-16 22:11:56,482 [connectionpool] [ INFO] Starting new HTTPS connection (1): android.clients.google.com
+2016-08-16 22:11:56,917 [connectionpool] [DEBUG] "POST /auth HTTP/1.1" 200 None
+2016-08-16 22:11:56,927 [connectionpool] [ INFO] Starting new HTTPS connection (1): android.clients.google.com
+2016-08-16 22:11:57,200 [connectionpool] [DEBUG] "POST /auth HTTP/1.1" 200 None
+2016-08-16 22:11:57,204 [auth_google] [ INFO] Google Login successful.
+2016-08-16 22:11:57,207 [auth_google] [DEBUG] Google Session Token: eyJhbGciOiJSUzI1NiIsImtpZ
+2016-08-16 22:11:57,210 [    pgoapi] [ INFO] Starting RPC login sequence (app simulation)
+2016-08-16 22:11:57,214 [    pgoapi] [ INFO] Creating a new request...
+2016-08-16 22:11:57,217 [    pgoapi] [ INFO] Adding 'GET_PLAYER' to RPC request
+2016-08-16 22:11:57,220 [    pgoapi] [ INFO] Adding 'GET_HATCHED_EGGS' to RPC request
+2016-08-16 22:11:57,223 [    pgoapi] [ INFO] Adding 'GET_INVENTORY' to RPC request
+2016-08-16 22:11:57,224 [    pgoapi] [ INFO] Adding 'CHECK_AWARDED_BADGES' to RPC request
+2016-08-16 22:11:57,227 [    pgoapi] [ INFO] Adding 'DOWNLOAD_SETTINGS' to RPC request including arguments
+2016-08-16 22:11:57,233 [    pgoapi] [DEBUG] Arguments of 'DOWNLOAD_SETTINGS':
+{'hash': '05daf51635c82611d1aac95c0b051d3ec088a930'}
+2016-08-16 22:11:57,236 [   rpc_api] [DEBUG] Generated new random RPC Request id: 418588732444961536
+2016-08-16 22:11:57,240 [    pgoapi] [ INFO] Execution of RPC
+2016-08-16 22:11:57,242 [   rpc_api] [DEBUG] Generating main RPC request...
+2016-08-16 22:11:57,244 [   rpc_api] [DEBUG] Incremented RPC Request ID: 418588732444961537
+2016-08-16 22:11:57,247 [   rpc_api] [DEBUG] NO auth ticket found - using oauth token
+2016-08-16 22:11:57,250 [   rpc_api] [DEBUG] Generating sub RPC requests...
+2016-08-16 22:11:57,361 [   rpc_api] [DEBUG] Subrequest class: POGOProtos.Networking.Requests.Messages_pb2.DownloadSettingsMessage
+2016-08-16 22:11:57,367 [   rpc_api] [DEBUG] Generated protobuf request:
+status_code: 2
+request_id: 418588732444961537
+requests {
+  request_type: GET_PLAYER
+}
+requests {
+  request_type: GET_HATCHED_EGGS
+}
+requests {
+  request_type: GET_INVENTORY
+}
+requests {
+  request_type: CHECK_AWARDED_BADGES
+}
+requests {
+  request_type: DOWNLOAD_SETTINGS
+  request_message: "\n(05daf51635c82611d1aac95c0b051d3ec088a930"
+}
+latitude: 39.000584
+longitude: -83.998636
+auth_info {
+  provider: "google"
+  token {
+    contents: "eyJhbGciOiJSUzI1NiIsImtpZCI6ImEzYzczN2E3Yjc5NTAyNjIxN2QwNWJlOThmODczNmJkMDlhNjlkMGQifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXVkIjoiODQ4MjMyNTExMjQwLTdzbzQyMWpvdHIyNjA5cm1xYWtjZXV1MWx1dXEwcHRiLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA2MzY1ODM2OTg2MTUwMjc4ODQ3IiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF6cCI6Ijg0ODIzMjUxMTI0MC0zdmRydHJmZG50bGpmMnU0bWxndG5ubGhuaWduMzVkNS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImVtYWlsIjoidGV3a3NiZ0BnbWFpbC5jb20iLCJpYXQiOjE0NzEzOTk5MTgsImV4cCI6MTQ3MTQwMzUxOCwibmFtZSI6IkdyZWdvcnkgVGV3a3NidXJ5IiwicGljdHVyZSI6Imh0dHBzOi8vbGg2Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tdDdGeXprUmZJQTQvQUFBQUFBQUFBQUkvQUFBQUFBQUFBS1EvREdua0VyS1pPXzQvczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6IkdyZWdvcnkiLCJmYW1pbHlfbmFtZSI6IlRld2tzYnVyeSJ9.AWPKO2utSWiZq9L2F2ToSUFjKt9lfPmaXzlkezplEgTIhJVeLbDaUALx0wNDB0w4_02GtvI9AKlFylboQiWElbJOJZw1YqHjARSx0rCJES4SLW8w-zFAyuI_aYfmaCGZXi8ochWDZHT6A9OOgF2KUEi-2jz_z2dFburMfabEPefEgq85np6gDt2MnQgRSLRF3e1V15GhMch9p6gCooKRpWEC-z3SKwL8DwPjMkN7B4SbwXJn1dExkFGoyNT7yuF5DL-tA2tsmRgm4mU67B6NBSEQiS6bgm-PBBSJlVMUWNl0qeMno2rdgz74sOUXw8ptutqHPBMmrTP9Yy-z0nLYOg"
+    unknown2: 59
+  }
+}
+unknown12: 989
+
+2016-08-16 22:11:57,444 [   rpc_api] [DEBUG] Execution of RPC
+2016-08-16 22:11:57,450 [connectionpool] [ INFO] Starting new HTTPS connection (1): pgorelease.nianticlabs.com
+2016-08-16 22:11:58,115 [connectionpool] [DEBUG] "POST /plfe/rpc HTTP/1.1" 200 None
+2016-08-16 22:11:58,121 [   rpc_api] [DEBUG] Parsing main RPC response...
+2016-08-16 22:11:58,124 [   rpc_api] [DEBUG] Protobuf structure of rpc response:
+status_code: 53
+request_id: 418588732444961537
+api_url: "pgorelease.nianticlabs.com/plfe/627"
+auth_ticket {
+  start: "\262\032\353\230*\313^\023\222\262\342h\"\230d6\346\224\341\331\377*\354\215\017\317\007e\371\226j\336\322r\340:\322\251+\216R\320\242\266(5z^|\225\337\322P\223O\205\177\260\230\275\220\3557G"
+  expire_timestamp_ms: 1471401718953
+  end: "e\256M\264\014\245\n7\330\241\212\027\230\202d\274"
+}
+returns: ""
+
+2016-08-16 22:11:58,148 [   rpc_api] [DEBUG] Decode raw over protoc (protoc has to be in your PATH):
+Couldn't find protoc in your environment OR other issue...
+2016-08-16 22:11:58,157 [   rpc_api] [DEBUG] Parsing sub RPC responses...
+2016-08-16 22:11:58,174 [   rpc_api] [DEBUG] Parsing class: POGOProtos.Networking.Responses_pb2.GetPlayerResponse
+2016-08-16 22:11:58,411 [   rpc_api] [DEBUG] Received auth ticket valid for 00:30:00 hours (1471399918411 < 1471401718953)
+2016-08-16 22:11:58,415 [    pgoapi] [ INFO] Cleanup of request!
+2016-08-16 22:11:58,421 [    pgoapi] [DEBUG] Setting API endpoint to: https://pgorelease.nianticlabs.com/plfe/627/rpc
+2016-08-16 22:11:58,428 [    pgoapi] [ INFO] Finished RPC login sequence (app simulation)
+2016-08-16 22:11:58,431 [    pgoapi] [ INFO] Login process completed
+2016-08-16 22:11:58,437 [    pgoapi] [ INFO] Creating a new direct request...
+2016-08-16 22:11:58,444 [    pgoapi] [ INFO] Adding 'GET_PLAYER' to RPC request
+2016-08-16 22:11:58,451 [    pgoapi] [ INFO] Execution of RPC
+2016-08-16 22:11:58,454 [   rpc_api] [DEBUG] Generating main RPC request...
+2016-08-16 22:11:58,461 [   rpc_api] [DEBUG] Incremented RPC Request ID: 418588732444961538
+2016-08-16 22:11:58,469 [      auth] [DEBUG] Auth ticket still valid for further 00:30:00 hours (1471399918469 < 1471401718953)
+2016-08-16 22:11:58,476 [   rpc_api] [DEBUG] Found auth ticket - using this instead of oauth token
+2016-08-16 22:11:58,480 [   rpc_api] [DEBUG] Generating sub RPC requests...
+2016-08-16 22:11:58,487 [   rpc_api] [DEBUG] Generated protobuf request:
+status_code: 2
+request_id: 418588732444961538
+requests {
+  request_type: GET_PLAYER
+}
+latitude: 39.000584
+longitude: -83.998636
+auth_ticket {
+  start: "\262\032\353\230*\313^\023\222\262\342h\"\230d6\346\224\341\331\377*\354\215\017\317\007e\371\226j\336\322r\340:\322\251+\216R\320\242\266(5z^|\225\337\322P\223O\205\177\260\230\275\220\3557G"
+  expire_timestamp_ms: 1471401718953
+  end: "e\256M\264\014\245\n7\330\241\212\027\230\202d\274"
+}
+unknown12: 989
+
+2016-08-16 22:11:58,510 [   rpc_api] [DEBUG] Execution of RPC
+2016-08-16 22:11:58,523 [connectionpool] [ INFO] Starting new HTTPS connection (1): pgorelease.nianticlabs.com
+2016-08-16 22:11:59,184 [connectionpool] [DEBUG] "POST /plfe/627/rpc HTTP/1.1" 200 None
+2016-08-16 22:11:59,190 [   rpc_api] [DEBUG] Parsing main RPC response...
+2016-08-16 22:11:59,194 [   rpc_api] [DEBUG] Protobuf structure of rpc response:
+status_code: 2
+request_id: 418588732444961538
+api_url: "pgorelease.nianticlabs.com/plfe/627"
+returns: "\010\001\022^\010\373\350\214\234\334*\022\007tewksbg(\003:\005\000\001\003\004\007B\016\030\002 \002(\0020\0028\002H\002P\002H\372\001P\302\003Z\007\020\227\200\350\261\351*b\000j\002\010\001r\014\n\010POKECOIN\020\036r\016\n\010STARDUST\020\235\254\003x\001"
+
+2016-08-16 22:11:59,219 [   rpc_api] [DEBUG] Decode raw over protoc (protoc has to be in your PATH):
+Couldn't find protoc in your environment OR other issue...
+2016-08-16 22:11:59,226 [   rpc_api] [DEBUG] Parsing sub RPC responses...
+2016-08-16 22:11:59,234 [   rpc_api] [DEBUG] Parsing class: POGOProtos.Networking.Responses_pb2.GetPlayerResponse
+2016-08-16 22:11:59,249 [    pgoapi] [ INFO] Cleanup of request!
+Response dictionary (get_player):
+{   'api_url': u'pgorelease.nianticlabs.com/plfe/627',
+    'request_id': 418588732444961538L,
+    'responses': {   'GET_PLAYER': {   'player_data': {   'avatar': {   'backpack': 2,
+                                                                        'eyes': 2,
+                                                                        'hair': 2,
+                                                                        'hat': 2,
+                                                                        'pants': 2,
+                                                                        'shirt': 2,
+                                                                        'shoes': 2},
+                                                          'contact_settings': {   'send_marketing_emails': True},
+                                                          'creation_timestamp_ms': 1467864003707L,
+                                                          'currencies': [   {   'amount': 30,
+                                                                                'name': u'POKECOIN'},
+                                                                            {   'amount': 54813,
+                                                                                'name': u'STARDUST'}],
+                                                          'daily_bonus': {   'next_defender_bonus_collect_timestamp_ms': 1471399198743L},
+                                                          'equipped_badge': {   },
+                                                          'max_item_storage': 450,
+                                                          'max_pokemon_storage': 250,
+                                                          'team': 3,
+                                                          'tutorial_state': [   0,
+                                                                                1,
+                                                                                3,
+                                                                                4,
+                                                                                7],
+                                                          'username': u'tewksbg'},
+                                       'success': True}},
+    'status_code': 2}
+2016-08-16 22:11:59,500 [    pgoapi] [ INFO] Creating a new request...
+2016-08-16 22:11:59,503 [    pgoapi] [ INFO] Adding 'GET_PLAYER' to RPC request
+2016-08-16 22:11:59,506 [    pgoapi] [ INFO] Adding 'GET_INVENTORY' to RPC request
+2016-08-16 22:11:59,513 [    pgoapi] [ INFO] Execution of RPC
+2016-08-16 22:11:59,516 [   rpc_api] [DEBUG] Generating main RPC request...
+2016-08-16 22:11:59,523 [   rpc_api] [DEBUG] Incremented RPC Request ID: 418588732444961539
+2016-08-16 22:11:59,528 [      auth] [DEBUG] Auth ticket still valid for further 00:29:59 hours (1471399919528 < 1471401718953)
+2016-08-16 22:11:59,536 [   rpc_api] [DEBUG] Found auth ticket - using this instead of oauth token
+2016-08-16 22:11:59,542 [   rpc_api] [DEBUG] Generating sub RPC requests...
+2016-08-16 22:11:59,548 [   rpc_api] [DEBUG] Generated protobuf request:
+status_code: 2
+request_id: 418588732444961539
+requests {
+  request_type: GET_PLAYER
+}
+requests {
+  request_type: GET_INVENTORY
+}
+latitude: 39.000584
+longitude: -83.998636
+auth_ticket {
+  start: "\262\032\353\230*\313^\023\222\262\342h\"\230d6\346\224\341\331\377*\354\215\017\317\007e\371\226j\336\322r\340:\322\251+\216R\320\242\266(5z^|\225\337\322P\223O\205\177\260\230\275\220\3557G"
+  expire_timestamp_ms: 1471401718953
+  end: "e\256M\264\014\245\n7\330\241\212\027\230\202d\274"
+}
+unknown12: 989
+
+2016-08-16 22:11:59,572 [   rpc_api] [DEBUG] Execution of RPC
+2016-08-16 22:11:59,584 [connectionpool] [ INFO] Starting new HTTPS connection (1): pgorelease.nianticlabs.com
+2016-08-16 22:12:00,194 [connectionpool] [DEBUG] "POST /plfe/627/rpc HTTP/1.1" 200 None
+2016-08-16 22:12:00,197 [   rpc_api] [DEBUG] Parsing main RPC response...
+2016-08-16 22:12:00,200 [   rpc_api] [DEBUG] Protobuf structure of rpc response:
+status_code: 3
+request_id: 418588732444961539
+returns: "\010\001\022^\010\373\350\214\234\334*\022\007tewksbg(\003:\005\000\001\003\004\007B\016\030\002 \002(\0020\0028\002H\002P\002H\372\001P\302\003Z\007\020\227\200\350\261\351*b\000j\002\010\001r\014\n\010POKECOIN\020\036r\016\n\010STARDUST\020\235\254\003x\001"
+returns: ""
+
+2016-08-16 22:12:00,223 [   rpc_api] [DEBUG] Decode raw over protoc (protoc has to be in your PATH):
+Couldn't find protoc in your environment OR other issue...
+2016-08-16 22:12:00,229 [   rpc_api] [DEBUG] Parsing sub RPC responses...
+2016-08-16 22:12:00,242 [   rpc_api] [DEBUG] Parsing class: POGOProtos.Networking.Responses_pb2.GetPlayerResponse
+2016-08-16 22:12:00,259 [   rpc_api] [DEBUG] Parsing class: POGOProtos.Networking.Responses_pb2.GetInventoryResponse
+2016-08-16 22:12:00,265 [    pgoapi] [ INFO] Cleanup of request!
+Response dictionary (get_player + get_inventory):
+{   'request_id': 418588732444961539L,
+    'responses': {   'GET_INVENTORY': {   },
+                     'GET_PLAYER': {   'player_data': {   'avatar': {   'backpack': 2,
+                                                                        'eyes': 2,
+                                                                        'hair': 2,
+                                                                        'hat': 2,
+                                                                        'pants': 2,
+                                                                        'shirt': 2,
+                                                                        'shoes': 2},
+                                                          'contact_settings': {   'send_marketing_emails': True},
+                                                          'creation_timestamp_ms': 1467864003707L,
+                                                          'currencies': [   {   'amount': 30,
+                                                                                'name': u'POKECOIN'},
+                                                                            {   'amount': 54813,
+                                                                                'name': u'STARDUST'}],
+                                                          'daily_bonus': {   'next_defender_bonus_collect_timestamp_ms': 1471399198743L},
+                                                          'equipped_badge': {   },
+                                                          'max_item_storage': 450,
+                                                          'max_pokemon_storage': 250,
+                                                          'team': 3,
+                                                          'tutorial_state': [   0,
+                                                                                1,
+                                                                                3,
+                                                                                4,
+                                                                                7],
+                                                          'username': u'tewksbg'},
+                                       'success': True}},
+    'status_code': 3}
+
+E:\PoGo\pgoapi-master\pgoapi-master>
